@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    .heading{
+       @apply flex justify-center items-center w-full h-full px-10 overflow-hidden
+    }
+    .card{
+        @apply sm:w-[400px]  w-full mb-10 flex flex-col  rounded-3xl shadow-md shadow-gray-500/100 brightness-110 hover:opacity-90
+    }
+    .label{
+        @apply font-bold  text-xl font-sans mr-4 mb-2
+    }
+    .rlabel{
+        @apply font-bold  text-xl font-sans mr-4 mb-1
+    }
+    .hide-scrollbar::-webkit-scrollbar{
+        display: none;
+    }
+    .hide-scrollbar {
+        -ms-overflow-style: none; /* For Internet Explorer 10+ */
+        scrollbar-width: none; /* For Firefox */
+      }
+   
+}
