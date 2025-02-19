@@ -95,7 +95,7 @@ useEffect(()=>{
             <div
             ref={msgEndRef}
               key={index}
-              className={isAuth._id === item.sender ? 'border-b-2 p-2 w-full flex flex-row justify-end' : 'border-b-2 p-2 h-full flex flex-row justify-start'}
+              className={isAuth._id === item.sender ? 'border-b-2 p-2 w-full flex flex-row justify-end' : 'border-b-2 p-2 w-full flex flex-row justify-start'}
             >
               {item.image ? <img src={item.image} alt="Sent" className='w-32 h-32 object-cover mt-2' /> : <p>{item.text}</p>}
             </div>
